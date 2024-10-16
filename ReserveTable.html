@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Website</title>
+    <link rel="icon" type="image/png" href="Images/LOGO_BARU.png">
+    <link rel="stylesheet" href="ReserveTable.css">
+</head>
+<body>
+    <div class="menu-list">
+        <h2>Menu</h2>
+        <ul>
+            <li>
+                <img src="Images/nasgor.jpg" alt="Nasi Goreng">
+                <span class="menu-item">Nasi Goreng</span>
+                <span class="price">Rp 20.000</span>
+                <button class="order-btn">Order</button>
+            </li>
+            <li>
+                <img src="Images/miegor.jpg" alt="Mie Goreng">
+                <span class="menu-item">Mie Ayam</span>
+                <span class="price">Rp 15.000</span>
+                <button class="order-btn">Order</button>
+            </li>
+            <li>
+                <img src="Images/Sate Manis Pontianak – Masakan Khas Pontianak _ Resep Koki.png" alt="Sate Manis Pontianak">
+                <span class="menu-item">Sate</span>
+                <span class="price">Rp 25.000</span>
+                <button class="order-btn">Order</button>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="order-form">
+        <h2>Order Form</h2>
+        <form id="order-form">
+            <label for="menu-item">Menu Item:</label>
+            <select id="menu-item" name="menu-item">
+              <option value="">Select Menu Item</option>
+              <option value="Nasi Goreng">Nasi Goreng</option>
+              <option value="Mie Ayam">Mie Ayam</option>
+              <option value="Sate">Sate</option>
+            </select>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1">
+            <button type="submit">Add to Order</button>
+          </form>
+        <div class="order-list">
+            <h2>Order List</h2>
+            <ul id="order-list"></ul>
+        </div>
+    </div>
+    <script src="ReserveTable.js"></script>
+</body>
+</html>

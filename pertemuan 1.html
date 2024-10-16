@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="icon" type="image/png" href="Images/LOGO_BARU.png">
+    <link rel="stylesheet" href="StyleCoding.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <div class="site-name">
+                <p class="FirstName">Tasty </p>
+                <p class="LastName">Bites</p>
+            </div>
+                <a href="Login.html"><button  class="Login">Login</button></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#fasilitas">Fasilitas </a></li>
+                <li>
+                    <button class="Next" onclick="Next()"><a>Contact</a></button>
+                </li>
+                <li><button class="A" onclick="A()"><a>About Us</a></button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="home-section">
+            <h2>Welcome to Tasty Bites</h2>
+            <p>Kami adalah restoran yang menyajikan makanan lezat dengan mengutamakan kualitas dan kepuasan pelanggan.</p>
+            <img src="Images/restaurant interios.jpeg" alt="Restaurant Interior">
+            <p>Restoran kami dirancang untuk memberikan suasana nyaman dan nyaman bagi pelanggan kami. Kami buka untuk sarapan, makan siang, dan makan malam, dan kami menawarkan berbagai pilihan menu untuk memenuhi setiap selera.</p>
+            <a href="ReserveTable.html"><button class="btn-reserve">Reserve a Table</button></a>
+        </section>
+        <section id="menu" class="menu-section">
+            <h2>Our Menu</h2>
+            <ul class="menu-list">
+                <li>
+                    <img src="Images/miegor.jpg" alt="Mie Goreng">
+                    <h3>Mie Goreng</h3>
+                    <p>Description of Makanan 1</p>
+                    <p>Price: Rp 20.000</p>
+                </li>
+                <li>
+                    <img src="Images/nasgor.jpg" alt="Nasi Goreng">
+                    <h3>Nasi Goreng Solaria</h3>
+                    <p>Description of Makanan 2</p>
+                    <p>Price: Rp 30.000</p>
+                </li>
+                <li>
+                    <img src="Images/makanan3.webp" alt="Makanan 3">
+                    <h3>Unknown</h3>
+                    <p>Description of Makanan 3</p>
+                    <p>Price: unknown</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script>  
+        // Mengatur smooth scrolling  
+        document.querySelectorAll('nav a').forEach(anchor => {  
+            anchor.addEventListener('click', function(e) {  
+                e.preventDefault(); // Mencegah perilaku default tautan  
+                const targetID = this.getAttribute('href');  
+                const targetElement = document.querySelector(targetID);  
+                // Gulir ke elemen yang dituju dengan efek halus  
+                targetElement.scrollIntoView({ behavior: 'smooth' });  
+            });  
+        });
+        function Next() {
+            window.location.href = 'contact.html';
+        }
+        function A() {
+            window.location.href = 'about.html';
+        }
+        function B() {
+            window.location.href = '.html';
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Tasty Bites Restaurant</p>
+        <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Social Media</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+.menu-list {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+  
+.menu-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.menu-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+  
+.menu-list li:last-child {
+    border-bottom: none;
+}
+  
+.menu-item {
+    font-weight: bold;
+}
+.menu-list img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+  
+.menu-list li:hover img {
+    transform: scale(1.1);
+}
+  .price {
+    font-size: 16px;
+    color: #666;
+}
+  
+.order-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.order-btn:hover {
+    background-color: #3e8e41;
+}
+  
+.order-form {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+  
+.order-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+  
+.order-form select, .order-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+  
+.order-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.order-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+  
+.order-list {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+  
+.order-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.order-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+  
+.order-list li:last-child {
+    border-bottom: none;
+}

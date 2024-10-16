@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/png" href="Images/LOGO_BARU.png">
+    <link rel="stylesheet" href="StyleCoding.css">
+</head>
+<body>
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Jika Anda memiliki pertanyaan atau ingin membuat reservasi, silakan hubungi kami melalui form di bawah ini.</p>
+        <form id="contactForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="nama" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Pesan:</label>
+            <textarea id="pesan" name="message"></textarea><br><br>
+            <button type="submit">Kirim</button>
+        </form>
+        <br>Atau Anda juga dapat menghubungi kami melalui:</br>
+        <ul>
+            <li>Telepon: 08123456789</li>
+            <li>Email: ...</li>
+            <li>Alamat: Jl. Raya No. 123, Kota malang</li>
+        </ul>
+        <script>  
+            document.getElementById("contactForm").addEventListener("submit", function(event) {  
+                event.preventDefault();
+    
+                const nama = document.getElementById("nama").value;  
+                const email = document.getElementById("email").value;  
+                const pesan = document.getElementById("pesan").value;  
+    
+                const data = {  
+                    nama: nama,  
+                    email: email,  
+                    pesan: pesan
+                };  
+    
+                localStorage.setItem('formData', JSON.stringify(data));  
+    
+                window.location.href = "terima_kasih.html";  
+            });  
+        </script> 
+    </section>
+</body>
+</html>
